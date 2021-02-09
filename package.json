@@ -1,0 +1,36 @@
+{
+  "name": "react-paginator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"npm run clean && rollup -c",
+    "clean": "rm -rf dist/ es/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bochen2014/react-paginator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bochen2014/react-paginator/issues"
+  },
+  "homepage": "https://github.com/bochen2014/react-paginator#readme",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@rollup/plugin-babel": "^5.2.3",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "rollup": "^2.38.5"
+  }
+}

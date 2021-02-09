@@ -1,0 +1,2 @@
+* `react-spinning-wheel` is a collections of react components which starts from a spinning wheel. 
+* don't worry, only coponents that are referenced in your project are bundled to your distribution package
