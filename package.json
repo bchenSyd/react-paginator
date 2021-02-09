@@ -1,6 +1,6 @@
 {
   "name": "react-simple-paginator",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "react paginator, easy to use. Example in story book",
   "main": "dist/paginator.js",
   "jsnext:main": "es/paginator.esm.js",
@@ -29,7 +29,8 @@
     "paging",
     "paginate",
     "story book",
-    "story-book"
+    "story-book",
+    "storybook"
   ],
   "author": "Bo Chen",
   "license": "MIT",
