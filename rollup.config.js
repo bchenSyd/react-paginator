@@ -11,18 +11,20 @@ export default {
   output: [
     {
       format: "es",
-      file: `es/paginator.es.js`,
+      file: `es/paginator.esm.js`,
     },
     {
       format: "cjs",
       file: `dist/paginator.js`,
+      exports:'named' // export.default = yourComponent ; when used by es module, do:  const Paginator = require('yourPackageName').default
+      //exports:'default' //module.exports= yourComponent; when used by es module, do: const Pageinator = require('yourPackageName')
+      // see babel-plugin-add-module-exports  
     },
   ],
   plugins: [
     babel({ babelHelpers: "bundled" }),
     resolve({
       extensions: [".js", ".jsx"],
-      modulesOnly: true,
     }),
     commonjs(),
   ],

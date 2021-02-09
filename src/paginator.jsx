@@ -3,13 +3,24 @@ import styled from "styled-components";
 
 const StyledWrapper = styled.div`
   span,
-  a {
+  button {
     &:not(:first-child) {
       margin-left: 20px;
     }
   }
 `;
 
+const StyledButton = styled.button`
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+`;
 const Paginator = ({
   totalPageNumber,
   currentPageNumber,
@@ -23,9 +34,9 @@ const Paginator = ({
     const leftLump = [];
     if (currentPageNumber > 3) {
       leftLump.push(
-        <a href="#" key="page_1" onClick={onPageNavigation(1)}>
+        <StyledButton key="page_1" onClick={onPageNavigation(1)}>
           1
-        </a>
+        </StyledButton>
       );
     }
     if (currentPageNumber > 4) {
@@ -40,13 +51,12 @@ const Paginator = ({
     }
     if (totalPageNumber > currentPageNumber + 2) {
       rightLump.push(
-        <a
-          href="#"
+        <StyledButton
           key={`page_${totalPageNumber}`}
           onClick={onPageNavigation(totalPageNumber)}
         >
           {totalPageNumber}
-        </a>
+        </StyledButton>
       );
     }
     return rightLump;
@@ -58,9 +68,9 @@ const Paginator = ({
         p === currentPageNumber ? (
           <span key={`page_${p}`}>{p}</span>
         ) : (
-          <a href="#" key={`page_${p}`} onClick={onPageNavigation(p)}>
+          <StyledButton key={`page_${p}`} onClick={onPageNavigation(p)}>
             {p}
-          </a>
+          </StyledButton>
         )
       )}
       {showRightLump()}
