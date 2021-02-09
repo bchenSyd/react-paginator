@@ -1,3 +1,6 @@
+easy to use
+
+```js
 export const Basic = () => {
   const totalPage = 10;
   const [currentPage, setCurrentPage] = useState(1);
@@ -17,5 +20,6 @@ export const Basic = () => {
     </>
   );
 };
+```
 
 see [this](https://bochen2014.github.io/react-paginator)
