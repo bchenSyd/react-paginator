@@ -1,0 +1,1 @@
+see [this](https://bochen2014.github.io/react-paginator)
