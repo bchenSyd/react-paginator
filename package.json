@@ -1,7 +1,7 @@
 {
   "name": "react-simple-paginator",
-  "version": "2.0.0",
-  "description": "",
+  "version": "2.0.1",
+  "description": "react paginator, easy to use",
   "main": "dist/paginator.js",
   "jsnext:main": "es/paginator.esm.js",
   "module": "es/paginator.esm.js",
@@ -21,8 +21,15 @@
     "type": "git",
     "url": "git+https://github.com/bochen2014/react-paginator.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "react",
+    "paginator",
+    "pagination",
+    "simple",
+    "paging"
+  ],
+  "author": "Bo Chen",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bochen2014/react-paginator/issues"
   },
