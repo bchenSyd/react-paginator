@@ -1,10 +1,10 @@
 {
-  "name": "react-paginator",
-  "version": "1.0.0",
+  "name": "react-simple-paginator",
+  "version": "1.0.2",
   "description": "",
-  "main": "dist/index.js",
-  "jsnext:main": "es/index.js",
-  "module": "es/index.js",
+  "main": "dist/paginator.js",
+  "jsnext:main": "es/paginator.es.js",
+  "module": "es/paginator.es.js",
   "files": [
     "dist",
     "es",
@@ -15,7 +15,7 @@
     "clean": "rm -rf dist/ es/",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 8001 ",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,10 +31,9 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
-  "dependencies": {
-    "styled-components": "^5.2.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "styled-components": "^5.2.1",
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
