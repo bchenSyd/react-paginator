@@ -14,7 +14,8 @@
     "build": "npm run clean && rollup -c",
     "clean": "rm -rf dist/ es/",
     "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 8001 "
+    "storybook": "start-storybook -p 8001 ",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
