@@ -1,1 +1,0 @@
-`yarn add react-paginator` or `npm install --save react-paginator`
