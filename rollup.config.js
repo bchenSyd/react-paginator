@@ -6,7 +6,7 @@ const pkg = require("./package.json");
 const external = Object.keys(pkg.peerDependencies || {});
 
 export default {
-  input: `src/index.jsx`,
+  input: `src/paginator.jsx`,
   external,
   output: [
     {
