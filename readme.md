@@ -1,4 +1,8 @@
-easy to use
+## install
+
+`npm install react-simple-paginator`
+
+## easy to use
 
 ```js
 export const Basic = () => {
