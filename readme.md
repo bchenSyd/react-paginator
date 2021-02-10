@@ -5,6 +5,9 @@
 ## easy to use
 
 ```js
+import React from 'react';
+import Paginator from 'react-simple-paginator';
+
 export const Basic = () => {
   const totalPage = 10;
   const [currentPage, setCurrentPage] = useState(1);
