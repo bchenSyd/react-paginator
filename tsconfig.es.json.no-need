@@ -1,0 +1,10 @@
+{
+  // no need to define a es config as d.ts is always consumed by ts;
+  // using ts declaration resolution rules;
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "ESNext", 
+    "outDir": "./es"
+  }
+}
