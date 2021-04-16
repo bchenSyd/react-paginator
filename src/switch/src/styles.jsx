@@ -327,7 +327,9 @@ export const SwitchWrapper = styled.label`
   ${({ responsive, size, theme }) =>
     responsive && responsive.xs
       ? getSizeCss(responsive.xs, theme)
-      : getSizeCss(size, theme)} ${({ theme, responsive }) =>
+      : getSizeCss(size, theme)} 
+  
+  ${({ theme, responsive }) =>
     responsive &&
     Object.entries(responsive)
       .map(([breakpointProp, sizeProp]) =>
