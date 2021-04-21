@@ -6,16 +6,16 @@ const pkg = require("./package.json");
 const external = Object.keys(pkg.peerDependencies || {});
 
 export default {
-  input: `src/paginator.jsx`,
+  input: `src/index.js`,
   external,
   output: [
     {
       format: "es",
-      file: `es/paginator.esm.js`,
+      file: `es/optus-gel.esm.js`,
     },
     {
       format: "cjs",
-      file: `dist/paginator.js`,
+      file: `dist/optus-gel.js`,
       exports:'named' // export.default = yourComponent ; when used by es module, do:  const Paginator = require('yourPackageName').default
       //exports:'default' //module.exports= yourComponent; when used by es module, do: const Pageinator = require('yourPackageName')
       // see babel-plugin-add-module-exports  

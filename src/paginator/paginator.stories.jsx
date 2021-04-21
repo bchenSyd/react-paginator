@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Paginator from "./paginator";
+import {Paginator} from "./index";
 
-export default { component: Paginator, title: "Examples / Paginator" };
+export default { component: Paginator, title: "Paginator" };
 
 export const Basic = () => {
   const totalPage = 10;

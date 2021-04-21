@@ -21,7 +21,7 @@ const StyledButton = styled.button`
   text-decoration: underline;
   cursor: pointer;
 `;
-const Paginator = ({
+export const Paginator = ({
   totalPageNumber,
   currentPageNumber,
   onPageNavigation,
@@ -78,4 +78,3 @@ const Paginator = ({
   );
 };
 
-export default Paginator;
