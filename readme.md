@@ -30,3 +30,5 @@ export const Basic = () => {
 ```
 
 see [this](https://bochen2014.github.io/react-paginator)
+
+# vscode remote repository
